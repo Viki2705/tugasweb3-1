@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <style>
+             body {
+            box-sizing: border-box;
+            width: fit-content;
+            padding: 1em;
+            margin: 5vh auto;
+
+        }
+        fieldset {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 1em 0;
+            
+        }
+        legend {
+            font-weight: bold;
+            font-size: 2.0em;
+        }
+        input, select, textarea {
+            margin-bottom: 5px;
+            padding: 5px;
+            width: 200px;
+        }
+        label {
+            
+            margin-bottom: 5px;
+            display: inline-block; 
+            width: 180px; 
+            
+        }
+        
+        .btn {
+            width: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+    <legend>Biodata Diri</legend>
+            <label>Nama Depan :</label> 
+            <input type="text" name="nama_depan" placeholder="Nama Depan"><br>
+            
+            <label>Nama Belakang :</label> 
+            <input type="text" name="nama_belakang" placeholder="Nama Belakang"><br>
+            
+            <label>Hobi :</label> 
+            <select name="hobi">
+                <option>Pilih Hobi</option>
+                <option>Olahraga</option>
+                <option>Musik</option>
+                <option>Membaca</option>
+            </select><br>
+            
+            <label>Jenis Kelamin :</label> 
+            <select id="gender" name="gender">
+                <option>Pilih Jenis Kelamin</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select><br>
+            
+            <label>Email :</label> 
+            <input type="email" name="email" placeholder="Email"><br>
+            
+            <label>Alamat :</label> 
+            <textarea name="alamat" cols="30" rows="3"></textarea><br>
+            
+            <label>Nomor Handphone :</label> 
+            <input type="text" name="nomor_handphone" placeholder="Nomor Handphone"><br>
+            
+            <input class="btn" type="submit" value="Submit">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
